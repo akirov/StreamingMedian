@@ -1,0 +1,7 @@
+.eclipse/
+.qtc/
+.settings/
+.project
+.cproject
+.idea
+*.user
