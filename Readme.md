@@ -2,7 +2,7 @@ Median of streaming data
 ========================
 
 A data structure containing a set of numbers (sample) with two operations:
-- add a number to the sample set
+- insert a number into the sample set
 - calculate the median of the set
 
 
@@ -45,8 +45,8 @@ Maintain two heaps - max heap for the lower half and min heap for the upper half
 of the set. Add new elements in the appropriate heap. Maintain difference of at
 most 1 element between the two, moving elements if needed. Roots will be the
 middle elements. Take the one with more elements or the average if heaps have
-equal number of element.
-Complexity : O(log(n)) to O(n) if heaps are unbalanced.
+equal number of elements.
+Complexity : O(log(n)) to O(n), if heaps are unbalanced.
 
 Method 7 is implemented in MedianSet class and compiled in `libmedian` library.
 A console demo and automatic tests are provided.
@@ -58,7 +58,7 @@ may need to disable the local build in tests/CMakeLists.txt.
 How to build from command line:
 -------------------------------
 
-Need CMake version > 3.1 and a C++ compiler to build.
+Need CMake version > 3.1 and a C++11 compiler to build.
 Tested on Windows 10 x64 with MinGW GCC 5.3.0_32 and with Cygwin GCC 7.3.0_32.
 Also on Ubuntu Linux 16.04 x64 with GCC 5.4.0_64. Corresponding binaries are
 provided in `bin` subfolders.

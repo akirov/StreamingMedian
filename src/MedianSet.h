@@ -8,7 +8,7 @@ namespace MyMedian
 {
 
 /**
- * This could be a template with parameter instead of double...
+ * This could be a template with a parameter T instead of double...
  */
 class MedianSet
 {
@@ -17,7 +17,7 @@ class MedianSet
     ~MedianSet() {}
 
     double getMedianValue() const;
-    void addNumber( double number );
+    void insertNumber( double number );
 
   private:
     // Will use std::priority_queue - it is implemented as a max heap

@@ -4,17 +4,16 @@
 using namespace MyMedian;
 
 
-void addVectorToMSet( const std::vector<double>& vd, MedianSet& m)
+void insertVectorInMSet( const std::vector<double>& v, MedianSet& m )
 {
-    for( const auto& num : vd )
+    for( const auto& num : v )
     {
-        m.addNumber(num);
+        m.insertNumber(num);
     }
 }
 
 
-
-TEST(MedianTest, getMedianValue) {
+TEST(MedianTest, getEmptyMedianValue) {
     MedianSet m;
     EXPECT_DOUBLE_EQ(m.getMedianValue(), 0.0);
 }
