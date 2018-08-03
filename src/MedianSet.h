@@ -19,9 +19,15 @@ class MedianSet
     double getMedianValue() const;
     void insertNumber( double number );
 
+    size_t getSize() const
+    {
+        return mLowerMaxHeap.size() + mUpperMinHeap.size();
+    }
+
   private:
-    // Will use std::priority_queue - it is implemented as a max heap
+    // Will use std::priority_queue - it is implemented as max-heap
     std::priority_queue<double,  std::vector<double> > mLowerMaxHeap;  // lower half
+    // std::greater<> (instead of default std::less<>) makes min-heap
     std::priority_queue<double,  std::vector<double>, std::greater<double> > mUpperMinHeap;  // upper half
 };
 
