@@ -33,7 +33,7 @@ TEST(MedianTest2, OneTwoThreeElementMedian) {
 
 TEST(MedianTest3, DuplicatedValues) {
     MedianSet m;
-    std::vector<double> v{2, 2, 2, 3, 1, 2, 2, 2};
+    std::vector<double> v{2, 2, 2, 300, -1, 2, 2, 2, -5000.5, 12345678};
     insertVectorInMSet(v, m);
     ASSERT_EQ(m.getSize(), v.size());
     EXPECT_DOUBLE_EQ(m.getMedianValue(), 2.0);
