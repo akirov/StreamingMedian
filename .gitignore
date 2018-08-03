@@ -1,7 +1,7 @@
 .eclipse/
 .qtc/
 .settings/
+.idea/
 .project
 .cproject
-.idea
 *.user
