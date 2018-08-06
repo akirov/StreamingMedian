@@ -45,7 +45,10 @@ void MedianSet::insertNumber( double number )
 {
     const size_t lsz = mLowerMaxHeap.size(), hsz = mUpperMinHeap.size();
 
-    assert( mLowerMaxHeap.top() <= mUpperMinHeap.top() );
+    if( lsz > 0 && hsz > 0 )
+    {
+        assert( mLowerMaxHeap.top() <= mUpperMinHeap.top() );
+    }
 
     if( lsz == 0  &&  hsz == 0 )  // Empty set
     {
