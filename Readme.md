@@ -45,8 +45,7 @@ Maintain two heaps - max heap for the lower half and min heap for the upper half
 of the set. Add new elements in the appropriate heap. Maintain difference of at
 most 1 element between the two, moving elements if needed. Roots will be the
 middle elements. Take the one with more elements or the average if heaps have
-equal number of elements.
-Complexity : O(log(n)) to O(n), if heaps are unbalanced.
+equal number of elements. Complexity : O(log(n)).
 
 Method 7 is implemented in MedianSet class and compiled in `libmedian` library.
 A console demo and automatic tests are provided.
