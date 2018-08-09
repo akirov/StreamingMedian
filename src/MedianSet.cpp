@@ -52,7 +52,7 @@ void MedianSet::insertNumber( double number )
 
     if( lsz == 0  &&  hsz == 0 )  // Empty set
     {
-        mLowerMaxHeap.push(number);  // Puth first nulber in the lower heap
+        mLowerMaxHeap.push(number);  // Put first number in the lower heap
     }
     else if( lsz >  hsz )  // Lower half is larger
     {

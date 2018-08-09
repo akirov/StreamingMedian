@@ -16,7 +16,7 @@ int main(int argc, char* argv[])
     MedianSet m;
 
     std::cout << "Please enter one or several numbers (separated by spaces) per line." << std::endl;
-    std::cout << "Arter first non-number rest of the line is ignored. Exit with 'exit':" << std::endl;
+    std::cout << "After first non-number rest of the line is ignored. Exit with 'exit':" << std::endl;
     std::cout << "> ";
     std::string input;
     while( std::getline( std::cin, input ) )
