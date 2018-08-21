@@ -61,8 +61,7 @@ How to build from command line:
 
 Need CMake version > 3.1 and a C++11 compiler to build.
 Tested on Windows 10 x64 with MinGW GCC 5.3.0_32 and with Cygwin GCC 7.3.0_32.
-Also on Ubuntu Linux 16.04 x64 with GCC 5.4.0_64. Corresponding binaries are
-provided in `bin` subfolders.
+Also on Ubuntu Linux 16.04 x64 with GCC 5.4.0_64.
 
 Cygwin or Linux:
 ```
